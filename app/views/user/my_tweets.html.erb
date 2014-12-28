@@ -1,0 +1,9 @@
+<%-content_for :title, t('app.my_tweets')-%>
+<h4><%= current_user.name %></h4>
+<%@tweets.each do |tweet|%>
+<div>
+	<%= render "user/card/summary", :user => tweet.user %>
+</div>
+<div><%= tweet.text %></div>
+<hr/>
+<%end%>

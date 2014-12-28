@@ -1,0 +1,10 @@
+<div><%= current_user.name %></div>
+
+<h4><%= t('app.friends_timeline') %></h4>
+<%@tweets.each do |tweet|%>
+<div>
+	<%= render "user/card/summary", :user => tweet.user, :go_to_tweets_link => true%>
+</div>
+<div><%= tweet.text %></div>
+<hr/>
+<%end%>

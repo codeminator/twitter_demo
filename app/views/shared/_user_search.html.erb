@@ -1,0 +1,8 @@
+<%= form_tag(single_timeline_user_path, method: 'get') do%>
+	 <%= label_tag :search_user, t('app.search_user'), :class => 'control-label' %>
+	 	<div class="controls">
+      <%= text_field_tag :username, nil, :class => 'form-control' %>
+      <br />
+      <%= submit_tag t('app.search'), class: 'btn btn-primary', disabled: true %>
+    </div>
+<%-end-%>

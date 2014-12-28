@@ -1,0 +1,15 @@
+<div>
+	<div clsss="userImg">
+		<%= image_tag user.profile_image_url%>
+	</div>
+	<div class="userName">
+		<strong><%= user.name %></strong>
+		<span><%= user.screen_name %></span>
+	</div>
+	<%= render "user/stats", user: user%>
+	<%-unless (description = user.description).blank?-%>
+		<div class="userDesc">
+			<span><%= description %></span>
+		</div>
+	<%-end-%>
+</div>

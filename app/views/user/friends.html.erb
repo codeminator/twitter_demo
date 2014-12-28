@@ -1,0 +1,6 @@
+<h4><%= t('app.friends') %></h4>
+<%@friends.each do |friend|%>
+	<div>
+		<%= render "user/card/summary", :user => friend, :go_to_tweets_link => true %>
+	</div>
+<%end%>

@@ -1,0 +1,7 @@
+<div>
+	<%if current_user.nil? %>
+		<%= render "shared/sign_in_form"%>
+	<%else%>
+		<%= render "shared/sign_out_form"%>
+	<%end%>
+</div>

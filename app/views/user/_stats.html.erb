@@ -1,0 +1,20 @@
+<div class="userStats">
+	<table class="table">
+		<thead>
+			<tr>
+				<th><%= t('app.th.tweets')%></th>
+				<th><%= t('app.th.following')%></th>
+				<th><%= t('app.th.followers')%></th>
+				<th><%= t('app.th.favorites')%></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><%= number_with_delimiter user.statuses_count %></td>
+				<td><%= number_with_delimiter user.friends_count %></td>
+				<td><%= number_with_delimiter user.followers_count %></td>
+				<td><%= number_with_delimiter user.favorites_count %></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

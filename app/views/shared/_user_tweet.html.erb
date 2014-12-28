@@ -1,0 +1,8 @@
+ <strong><%= label_tag :say_something, t('app.say_something'), :class => 'control-label' %></strong>
+<%= form_tag(tweet_user_path, method: 'post') do%>
+	 	<div class="controls">
+      <%= text_field_tag :tweet, nil, :class => 'form-control' %>
+      <br />
+      <%= submit_tag t('app.tweet'), class: 'btn btn-primary', disabled: true %>
+    </div>
+<%-end-%>

@@ -1,0 +1,36 @@
+== Twitter Demo
+
+A small demo with the following features:
+  - Log in/Log out
+  - Show friends timeline.
+  - Show own tweets.
+  - Follow/Unfollow user
+  - Send direct message to user.
+  - Search for a user and list his/her timeline.
+  - And of course, tweet!
+
+== Prerequisits
+
+* Ruby version: > 1.9.3
+
+== Installation
+
+  - $ git clone git@github.com:codeminator/twitter_demo.git
+  - $ cd twitter_demo
+  - $ bundle install
+  - Set database credentials by setting these env. variables:
+    - DB_USERNAME # database username
+    - DB_PASSWORD $ database password
+  - $ rake db:create
+  - $ rake db:migrate
+
+
+ == Usage
+
+   - In order to be authinticated by Twitter, you have first to register an app with Twitter via https://apps.twitter.com/
+
+   - After registering the application, you will get consumer key & secret
+   - Set these env. variables in order to make the application work (otherwise, you will get 401 Unauthorized error):
+     - CONSUMER_KEY #Twitter app consumer key
+     - CONSUMER_SECRET #Twitter app consumer secret
+   - Now you are ready to go!

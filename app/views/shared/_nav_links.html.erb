@@ -1,0 +1,9 @@
+<li>
+	<%if current_user.nil? %>
+		<%= link_to t('app.sign_in'), "/auth/twitter"  %>
+	<%else%>
+	<%= link_to t('app.sign_out'), signout_path  %>
+	<%end%>
+</li>
+<li><%= link_to t('app.my_tweets'), my_tweets_user_path  %></li>
+<li><%= link_to t('app.friends_timeline'), friends_timeline_user_path  %></li>

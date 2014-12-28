@@ -1,0 +1,15 @@
+<%= modal title: t('app.message'), size: :large, id: "modal_#{user.screen_name}", button: {class: :en} do %>
+  <div class="modal-body">
+    <%= form_tag(message_user_path, method: 'post') do%>
+     <%= label_tag :to, t('app.message_to'), :class => 'control-label' %>
+     <span><%= user.screen_name%></span>
+      <div class="controls">
+        <%= hidden_field_tag :username, user.screen_name %>
+        <br />
+        <%= text_area_tag :body, nil, :class => 'form-control' %>
+        <br />
+        <%= submit_tag t('app.message_send'), class: 'btn btn-primary', disabled: true %>
+      </div>
+    <%-end-%>
+  </div>
+<% end %>

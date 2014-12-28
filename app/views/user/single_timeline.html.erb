@@ -1,0 +1,9 @@
+<%= render "user/card/detailed", :user => @user%>
+<%-content_for :title, t('app.timeline_for', username: @username)-%>
+<%@tweets.each do |tweet|%>
+<div>
+	<%= render "user/card/summary", :user => @user, hide_tweets_link: true, is_followed: @is_followed%>
+</div>
+<div><%= tweet.text %></div>
+<hr/>
+<%end%>

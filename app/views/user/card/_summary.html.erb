@@ -1,0 +1,20 @@
+<%= link_to(image_tag(user.profile_image_url), user.url.to_s, {target: "_blank"}) %>
+<%= link_to user.screen_name, user.url.to_s, {target: "_blank"} %>
+<br />
+<%if current_user.screen_name != user.screen_name%>
+	<ul>
+		<%-unless defined?(hide_tweets_link)-%>
+			<li><%= link_to t('app.show_tweets'), single_timeline_user_path(username: user.screen_name)%></li>
+		<%-end-%>
+		<li>	
+			<%if @is_followed%>
+				<%= link_to t('app.unfollow'), unfollow_user_path(user.screen_name), method: 'post' %>
+			<%else%>
+				<%= link_to t('app.follow'), follow_user_path(user.screen_name), method: 'post' %>
+			<%end%>
+		</li>
+		<li>
+			<%= render "user/message", user: user%>
+		</li>
+	</ul>
+<%end%>

@@ -25,12 +25,12 @@ A small demo with the following features:
   - $ rake db:migrate
 
 
- == Usage
+== Usage
 
-   - In order to be authinticated by Twitter, you have first to register an app with Twitter via https://apps.twitter.com/
+  - In order to be authinticated by Twitter, you have first to register an app with Twitter via https://apps.twitter.com/
 
-   - After registering the application, you will get consumer key & secret
-   - Set these env. variables in order to make the application work (otherwise, you will get 401 Unauthorized error):
-     - CONSUMER_KEY #Twitter app consumer key
-     - CONSUMER_SECRET #Twitter app consumer secret
-   - Now you are ready to go!
+  - After registering the application, you will get consumer key & secret
+  - Set these env. variables in order to make the application work (otherwise, you will get 401 Unauthorized error):
+    - CONSUMER_KEY #Twitter app consumer key
+    - CONSUMER_SECRET #Twitter app consumer secret
+  - Now you are ready to go!

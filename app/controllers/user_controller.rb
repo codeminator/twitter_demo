@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-
+  #core actions
   def my_tweets
 	  @tweets = current_user.my_tweets
   end

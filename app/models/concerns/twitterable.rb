@@ -1,4 +1,5 @@
 module Twitterable
+  
   extend ActiveSupport::Concern
 
   module ClassMethods

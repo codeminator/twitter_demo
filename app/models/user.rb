@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  #This concern can be used to initiate and use methods of Twitter Social client (Singleton pattern applied, to reduce requests to the client)
+  ##This concern can be used to initiate and use methods of Twitter Social client (Singleton pattern applied, to reduce requests to the client)
   include Twitterable
   #--------------Attributes---------------
   alias_attribute :screen_name, :nickname

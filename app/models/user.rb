@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   
   #**************Public methods***********
   ###############Class Methods############
-	def self.from_omniauth(auth)
+  def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid).permit!).first_or_initialize.tap do |user|
       user.provider = auth.provider
       user.uid = auth.uid
@@ -18,7 +18,6 @@ class User < ActiveRecord::Base
       user.description = auth.info.description
       user.oauth_token = auth.credentials.token
       user.oauth_secret = auth.credentials.secret
-      
       user.save!
     end
   end

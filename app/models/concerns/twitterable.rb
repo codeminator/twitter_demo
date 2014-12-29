@@ -95,5 +95,4 @@ module Twitterable
   def favorites_count
     user_instance.favorites_count
   end
-
 end

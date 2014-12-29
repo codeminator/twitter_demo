@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   end
 
   def error
-  	flash[:error] = 'Sign in to Twitter failed'
-  	redirect_to root_path
+    flash[:error] = 'Sign in to Twitter failed'
+    redirect_to root_path
   end
 end

@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.0.rc3'
 
-gem 'mysql2'
+#gem 'mysql2'
+gem 'pg'
 #twitter-related gems
 gem 'omniauth'
 gem 'omniauth-twitter'

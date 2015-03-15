@@ -10,11 +10,11 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   pool: 5
-  username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['DB_PASSWORD'] %>
+  username: asamir
+  password: 123456
   socket: /var/run/mysqld/mysqld.sock
 
 development:

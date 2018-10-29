@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.0.rc3'
+gem 'rails', '4.2.9'
 
 #gem 'mysql2'
 gem 'pg'
@@ -9,8 +9,6 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'twitter'
 gem 'twitter-text'
-
-gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 gem 'bh', '~> 1.2'
